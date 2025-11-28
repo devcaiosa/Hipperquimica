@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial - Hipperquimica + Agente de IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Variáveis e Reset --- */
+        :root {
+            --primary-color: #0056b3; /* Azul Profissional */
+            --secondary-color: #003d80;
+            --accent-color: #00d4ff;
+            --text-color: #333333;
+            --light-text: #666666;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --success: #28a745;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+        /* --- Header --- */
+        header {
+            background-color: var(--card-bg);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 700; font-size: 1.2rem; color: var(--primary-color); letter-spacing: -0.5px; }
+        .status-badge { background: #eef2ff; color: var(--primary-color); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
+
+        /* --- Hero Section --- */
+        .hero { text-align: center; padding: 80px 0 60px; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 15px; color: #111; letter-spacing: -1px; }
+        .hero p { font-size: 1.1rem; color: var(--light-text); max-width: 700px; margin: 0 auto; }
+
+        /* --- Cards e Seções --- */
+        section { margin-bottom: 60px; }
+        .section-title { font-size: 1.5rem; margin-bottom: 30px; border-left: 4px solid var(--primary-color); padding-left: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .card h3 { margin-bottom: 15px; color: var(--primary-color); }
+        
+        .card ul { list-style: none; }
+        .card ul li { margin-bottom: 10px; padding-left: 20px; position: relative; font-size: 0.95rem; color: var(--light-text); }
+        .card ul li::before { content: "✓"; color: var(--success); position: absolute; left: 0; font-weight: bold; }
+
+        /* --- Investimento (Pricing) --- */
+        .pricing-highlight { border: 2px solid var(--primary-color); position: relative; }
+        .price-tag { font-size: 2.5rem; font-weight: 700; color: var(--text-color); margin: 20px 0; }
+        .price-tag span { font-size: 1rem; color: var(--light-text); font-weight: 400; }
+        .sub-price { margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; }
+        .token-info { font-size: 0.85rem; background: #fff3cd; color: #856404; padding: 10px; border-radius: 6px; margin-top: 15px; }
+
+        /* --- Footer e CTA --- */
+        .cta-section { text-align: center; background: var(--card-bg); padding: 60px 20px; border-top: 1px solid #eaeaea; }
+        .btn { display: inline-block; background-color: var(--primary-color); color: white; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: background 0.3s; border: none; cursor: pointer; }
+        .btn:hover { background-color: var(--secondary-color); }
+        footer { text-align: center; padding: 40px 0; color: var(--light-text); font-size: 0.9rem; }
+
+        /* --- Responsividade --- */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .header-content { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">AUTOMAÇÃO & IA</div>
+            <div class="status-badge">Proposta #0424</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Hipperquimica + Agente de IA</h1>
+            <p>Transforme seu <strong>primeiro atendimento</strong> em uma <strong>máquina automática</strong> que nutre os leads e entrega só clientes <strong>“quentes”</strong> para o comercial.</p>
+        </section>
+
+        <!-- Escopo do Projeto -->
+        <section>
+            <h2 class="section-title">Como vai funcionar</h2>
+            <div class="grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <h3>01. Atendimento Imediato</h3>
+                    <ul>
+                        <li>Resposta em minutos, 24/7.</li>
+                        <li>Captura inicial de dados do lead.</li>
+                        <li>Filtro de curiosos vs. compradores.</li>
+                        <li>Tira dúvidas sobre produtos Hipperquimica.</li>
+                    </ul>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <h3>02. Nutrição & Follow-up</h3>
+                    <ul>
+                        <li>A IA não esquece de responder.</li>
+                        <li>Retoma o contato se o lead sumir.</li>
+                        <li>Envia materiais técnicos persuasivos.</li>
+                        <li>Mantém o lead engajado no funil.</li>
+                    </ul>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <h3>03. O "Handoff" (Entrega)</h3>
+                    <ul>
+                        <li>Identifica intenção real de compra.</li>
+                        <li>Transfere para o Vendedor Humano.</li>
+                        <li>Entrega o resumo: "Quem é e o que quer".</li>
+                        <li>Otimiza o tempo da equipe de vendas.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investimento -->
+        <section id="investimento">
+            <h2 class="section-title">Investimento do Projeto</h2>
+            <div class="grid">
+                
+                <!-- Setup Inicial -->
+                <div class="card pricing-highlight">
+                    <span style="color: var(--primary-color); font-weight: 600; font-size: 0.9rem; text-transform: uppercase;">Implementação do Agente</span>
+                    <div class="price-tag">R$ 4.000,00 <span>/ pagamento único</span></div>
+                    <ul>
+                        <li>Configuração do Fluxo de Vendas (Script).</li>
+                        <li>Integração da IA no WhatsApp.</li>
+                        <li>Treinamento com catálogo Hipperquimica.</li>
+                        <li>Testes de qualificação de leads.</li>
+                    </ul>
+                </div>
+
+                <!-- Recorrência -->
+                <div class="card">
+                    <span style="color: var(--light-text); font-weight: 600; font-size: 0.9rem; text-transform: uppercase;">Manutenção & Melhoria</span>
+                    <div class="price-tag">R$ 500,00 <span>/ mês</span></div>
+                    <ul>
+                        <li>Ajustes finos no "prompt" para melhorar a conversão de leads.</li>
+                        <li>Pequenos ajustes no fluxo da IA.</li>
+                        <li>Manutenção do servidor ativo.</li>
+                        <li>Inserção de novos produtos ou mudança de preços no cérebro da IA..</li>
+                    </ul>
+                    
+                    <div class="sub-price">
+                        <strong>+ Custos de Uso (Tokens API)</strong>
+                        <p style="font-size: 0.9rem; color: #666;">Pago diretamente à fornecedora da IA (ex: OpenAI).</p>
+                        <div class="token-info">
+                            ℹ️ O cliente paga apenas pelo que usar (sistema de tokens/créditos). Estimativa para baixo volume: R$ 50,00 a R$ 150,00/mês.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Cronograma -->
+        <section>
+            <h2 class="section-title">Etapas de Entrega</h2>
+            <div class="card" style="border-left: 4px solid var(--accent-color);">
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <div><strong>Fase 1:</strong> Definição do roteiro de vendas e abordagem da IA.</div>
+                    <div><strong>Fase 2:</strong> Programação do Agente e integração com catálogo.</div>
+                    <div><strong>Fase 3:</strong> Testes de "Roleplay" (simulação de vendas).</div>
+                    <div><strong>Fase 4:</strong> Go Live (Sistema no ar captando leads).</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta-section">
+        <h2 style="margin-bottom: 20px;">Vamos escalar as vendas da Hipperquimica?</h2>
+        <p style="margin-bottom: 30px; color: var(--light-text);">Otimize o tempo do seu comercial recebendo apenas leads prontos.</p>
+        <!-- Substitua o link do WhatsApp pelo seu número real -->
+        <a href="https://wa.me/5574981402176?text=Olá,%20gostei%20da%20proposta%20do%20Agente%20de%20IA.%20Podemos%20fechar?" class="btn" target="_blank">
+            Aprovar Proposta no WhatsApp
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 - Soluções em Inteligência Artificial</p>
+    </footer>
+
+    <script>
+        // Animação de entrada suave
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * (index + 1));
+            });
+        });
+    </script>
+</body>
+</html>
